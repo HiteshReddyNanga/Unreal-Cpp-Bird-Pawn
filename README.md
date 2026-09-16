@@ -1,54 +1,133 @@
-# Bird Pawn — Unreal Engine C++
+# 🐦 Bird Pawn — Unreal Engine C++
 
-A small Unreal Engine C++ project created while learning gameplay programming with C++.
+A small Unreal Engine C++ gameplay programming project created while learning and practicing **C++ with Unreal Engine**.
 
-## What I Implemented
+The project focuses on building a custom Bird Pawn in C++ and implementing player-controlled movement using Unreal Engine's **Enhanced Input System**.
 
-### 🐦 Bird Pawn
+---
 
-Created a custom `APawn` class in C++ to control a bird character.
+## 🎥 Demo
+
+### Bird Flight Demo
+
+The demo showcases the Bird Pawn responding to player input and flying through the Unreal Engine environment.
+
+> **Demo video:** ![Bird Pawn Demo](Media/BirdPawn_Demo.mp4)
+
+---
+
+## ✨ Features & Implementation
+
+### 🐦 Custom Bird Pawn
+
+Created a custom Pawn class in C++:
+
+```cpp
+ABird : public APawn
+```
+
+The Bird Pawn handles its own component setup, movement functionality, input configuration, and gameplay logic through Unreal Engine C++.
 
 ### 🎮 Enhanced Input System
 
 Implemented player input using Unreal Engine's **Enhanced Input System**.
 
-The Bird Pawn uses keyboard input to control its movement.
+The project works with Unreal's modern input framework, including:
 
-### 🧩 Unreal Engine Components
+- `UInputMappingContext`
+- `UInputAction`
+- `UEnhancedInputComponent`
+- `UEnhancedInputLocalPlayerSubsystem`
 
-Worked with Unreal Engine components including:
+Input is bound to C++ functions to control the Bird Pawn.
 
-* `UCapsuleComponent`
-* `USkeletalMeshComponent`
-* `UCameraComponent`
-* `USpringArmComponent`
+### 🧩 Component-Based Setup
+
+The Bird Pawn uses several Unreal Engine components:
+
+| Component | Purpose |
+|---|---|
+| `UCapsuleComponent` | Collision |
+| `USkeletalMeshComponent` | Bird character mesh |
+| `UFloatingPawnMovement` | Pawn movement |
+| `USpringArmComponent` | Camera positioning |
+| `UCameraComponent` | Player camera |
 
 ### 💻 C++ Gameplay Programming
 
-Practiced:
+This project provided hands-on practice with:
 
-* Creating Unreal C++ classes
-* Header (`.h`) and source (`.cpp`) files
-* Classes and inheritance
-* Constructors
-* Unreal Engine component initialization
-* Functions and variables
-* Enhanced Input setup
-* Input callbacks
-* Pawn movement
+- C++ classes and inheritance
+- Header (`.h`) and source (`.cpp`) files
+- Unreal Engine constructors
+- Member variables and functions
+- Unreal Engine macros
+- Component creation and attachment
+- Input binding
+- Pointers and Unreal Engine object references
+- Working with Unreal Engine APIs
 
-## Technologies
+---
 
-* Unreal Engine 5.8
-* C++
-* Enhanced Input System
+## 🛠️ Technologies
 
-## Files
+- **Unreal Engine 5.8**
+- **C++**
+- **Enhanced Input System**
+- **Visual Studio**
 
-`Bird.h` — Bird Pawn class declaration and variables/functions.
+---
 
-`Bird.cpp` — Bird Pawn implementation, component setup, Enhanced Input configuration, and movement logic.
+## 📂 Repository Structure
 
-## Purpose
+```text
+Unreal-Cpp-Bird-Pawn/
+│
+├── BirdPawn/
+│   ├── Bird.h
+│   └── Bird.cpp
+│
+└── README.md
+```
 
-This is part of my ongoing journey learning **C++ for Unreal Engine gameplay programming**. I am building small systems and gradually applying what I learn to larger Unreal Engine projects.
+### `Bird.h`
+
+Contains the Bird Pawn class declaration, component references, variables, and function declarations.
+
+### `Bird.cpp`
+
+Contains the implementation of the Bird Pawn, including component initialization, input setup, and movement logic.
+
+---
+
+## 🎯 Project Goals
+
+The main goal of this project is to learn Unreal Engine C++ through practical implementation rather than theory alone.
+
+This project focuses on understanding how C++ gameplay classes interact with Unreal Engine's component system and Enhanced Input framework.
+
+---
+
+## 🚀 Future Improvements
+
+As I continue learning Unreal Engine C++, I plan to explore:
+
+- More advanced flight movement
+- Takeoff and landing mechanics
+- Flying animations
+- Improved camera controls
+- Additional gameplay interactions
+- More advanced movement systems
+- Integration of C++ systems with Blueprints
+
+---
+
+## 📚 Learning Journey
+
+This Bird Pawn is one of my first practical Unreal Engine C++ projects.
+
+I am building small gameplay systems step by step to develop a stronger foundation in **C++ gameplay programming** and eventually apply these concepts to larger Unreal Engine projects.
+
+---
+
+**More Unreal Engine C++ projects coming soon. 🎮**
