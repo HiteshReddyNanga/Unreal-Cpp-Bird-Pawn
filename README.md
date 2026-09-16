@@ -12,7 +12,7 @@ The project focuses on building a custom Bird Pawn in C++ and implementing playe
 
 The demo showcases the Bird Pawn responding to player input and flying through the Unreal Engine environment.
 
-> **Demo video:** ![Bird Pawn Demo](Media/BirdPawn_Demo.mp4)
+> **Demo video:** ![Bird Pawn Demo](Media/BirdPawn_Demo.gif)
 
 ---
 
